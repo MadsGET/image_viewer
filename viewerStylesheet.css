@@ -90,12 +90,31 @@ div.imageBox
 div.hoverBox
 {
     position: absolute;
+    color: snow;
+    font-size: 0px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
     height: 100%;
     width: 100%;
 }
+
+#leftHover:hover
+{
+    background-image: url('icon_ArrowLeft.png');
+}
+
+#rightHover:hover
+{
+    background-image: url('icon_ArrowRight.png');
+}
+
 div.hoverBox:hover
 {
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 0px;
 }
 
 img
