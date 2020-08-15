@@ -12,15 +12,15 @@
         <div class="imageViewer">
 
             <div class="title">
-                <p>Image Title</p>
+                <p id="imageTitle">Image Title</p>
             </div>
 
             <div class="mainImage">
-                <img src="image_1.png" id="imageMain" onclick="GotoNextImage()"></img>
+                <img src="image_1.png" id="imageMain"></img>
             </div>
 
             <div class="carousel">
-                <div class="previewBack" style="border-right-style: none;">
+                <div class="previewBack" style="border-right-style: none;" onclick="GotoNextImage()">
                     <div class="imageBox">
                         <img src="image_4.png" id="previewBack"></img>
                     </div>
@@ -30,7 +30,7 @@
                         <img src="image_1.png" id="previewMain"></img>
                     </div>
                 </div>
-                <div class="previewNext" style="border-left-style: none;">
+                <div class="previewNext" style="border-left-style: none;" onclick="GotoNextImage()">
                     <div class="imageBox">
                         <img src="image_2.png" id="previewNext"></img>
                     </div>
