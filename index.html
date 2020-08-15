@@ -15,24 +15,28 @@
                 <p id="imageTitle">Image Title</p>
             </div>
 
-            <div class="mainImage">
+            <div class="mainImage">               
                 <img src="image_1.png" id="imageMain" onclick="OpenImage()"></img>
             </div>
 
             <div class="carousel">
-                <div class="previewBack" style="border-right-style: none;" onclick="GotoPreviousImage()">
-                    <div class="imageBox">
+                <div class="previewBack" style="border-right-style: none;">
+                    <div class="imageBox" onclick="GotoPreviousImage()">
+                        <div class="hoverBox"></div>
                         <img src="image_4.png" id="previewBack"></img>
                     </div>
                 </div>
                 <div class="previewMain">
                     <div class="imageBox">
+                        <div class="hoverBox"></div>
                         <img src="image_1.png" id="previewMain"></img>
                     </div>
                 </div>
-                <div class="previewNext" style="border-left-style: none;" onclick="GotoNextImage()">
-                    <div class="imageBox">
-                        <img src="image_2.png" id="previewNext"></img>
+                <div class="previewNext" style="border-left-style: none;">
+
+                    <div class="imageBox" onclick="GotoNextImage()">
+                        <div class="hoverBox"></div>
+                        <img src="image_2.png" id="previewNext"></div></img>
                     </div>
                 </div>
             </div>

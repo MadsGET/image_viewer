@@ -17,6 +17,7 @@ function OnPageLoaded()
     GotoNextImage();
 }
 
+// Opens main image in a new tab.
 function OpenImage()
 {
     window.open(imageUrlArray[carouselIndex]);
@@ -26,7 +27,7 @@ function OpenImage()
 function GotoNextImage()
 {
     // Set new preview back image.
-    imagePreviewBack.src = SetElementSource((carouselIndex == -1) ? 1 : carouselIndex);
+    imagePreviewBack.src = SetElementSource((carouselIndex == -1) ? imageUrlArray.length -1 : carouselIndex);
 
     // Set new preview, main and title.
     carouselIndex = GetNextIndex(carouselIndex, false);
