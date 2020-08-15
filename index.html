@@ -7,7 +7,7 @@
         <script src="imageviewer.js"></script>
     </header>
 
-    <body>
+    <body onload="OnPageLoaded()">
         <h1 style="text-align: center;">Image Viewer</h1>
         <div class="imageViewer">
 
@@ -16,23 +16,23 @@
             </div>
 
             <div class="mainImage">
-                <img src="image_1.png" style="width: 100%; height: 100%;"></img>
+                <img src="image_1.png" id="imageMain" onclick="GotoNextImage()"></img>
             </div>
 
             <div class="carousel">
                 <div class="previewBack" style="border-right-style: none;">
                     <div class="imageBox">
-
+                        <img src="image_4.png" id="previewBack"></img>
                     </div>
                 </div>
                 <div class="previewMain">
                     <div class="imageBox">
-
+                        <img src="image_1.png" id="previewMain"></img>
                     </div>
                 </div>
                 <div class="previewNext" style="border-left-style: none;">
                     <div class="imageBox">
-
+                        <img src="image_2.png" id="previewNext"></img>
                     </div>
                 </div>
             </div>
