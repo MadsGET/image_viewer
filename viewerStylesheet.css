@@ -10,14 +10,14 @@ body
 div.imageViewer
 {
     height: 50vh;
-    width: 50vw;
+    width: 40vw;
     padding:0;
     margin: auto;
     margin-top: 5%;
     background-color: rgb(168, 156, 156);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 8fr 3fr;
+    grid-template-rows: 1fr 8fr 3.5fr;
     grid-template-areas: 'title'
                          'mainImage'
                          'carousel';
@@ -62,5 +62,7 @@ div.previewNext
 
 div.previewBack, div.previewMain, div.previewNext
 {
+
+
     border: 1px solid red;
 }
