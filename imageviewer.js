@@ -1,4 +1,5 @@
 var imageUrlArray = ['image_1.png','image_2.png','image_3.png','image_4.png'];
+var imageTitles =['Spring in Oakland', 'Summer in China', 'Winter in Finland', 'Autmn in Holland'];
 var carouselIndex = 0;
 
 var imageMain, imagePreviewBack, imagePreviewMain, imagePreviewNext;
@@ -18,7 +19,7 @@ function GotoNextImage()
     // Set new preview back image.
     imagePreviewBack.src = SetElementSource(carouselIndex);
 
-    // Set new main image.
+    // Set new main and preview image.
     carouselIndex = GetNextIndex(carouselIndex, false);
     imageMain.src = SetElementSource(carouselIndex);
     imagePreviewMain.src = SetElementSource(carouselIndex);
