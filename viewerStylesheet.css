@@ -102,19 +102,30 @@ div.hoverBox
     width: 100%;
 }
 
-#leftHover:hover
+#leftHover
 {
     background-image: url('icon_arrowLeft.png');
+}
+
+#rightHover
+{
+    background-image: url('icon_arrowRight.png');
+}
+
+#leftHover, #rightHover
+{
+    opacity: 75%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#leftHover:hover, #rightHover:hover
+{
+    opacity: 100%;
 }
 
 #middleHover:hover
 {
     background-image: url('icon_download.png');
-}
-
-#rightHover:hover
-{
-    background-image: url('icon_arrowRight.png');
 }
 
 div.hoverBox:hover
