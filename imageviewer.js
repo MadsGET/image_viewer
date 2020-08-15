@@ -13,7 +13,13 @@ function OnPageLoaded()
     imagePreviewMain = document.getElementById("previewMain");
     imagePreviewNext = document.getElementById("previewNext");
 
+    // Run GotoNextImage to automaticly setup images and title.
     GotoNextImage();
+}
+
+function OpenImage()
+{
+    window.open(imageUrlArray[carouselIndex]);
 }
 
 // Moves the carousel towards the next index.
@@ -36,11 +42,19 @@ function GotoNextImage()
 // Moves the carousel towards the previous index.
 function GotoPreviousImage()
 {
+    // Set the next preview image.
+    imagePreviewNext.src = SetElementSource(carouselIndex);
+
     // Set new main and preview image.
-    carouselIndex = GetNextIndex(carouselIndex - 1, true);
+    carouselIndex = GetPreviousIndex(carouselIndex, true);
     imageMain.src = SetElementSource(carouselIndex);
     imagePreviewMain.src = SetElementSource(carouselIndex);
     imageTitle.innerHTML = SetImageTitle(carouselIndex);
+
+    // Set new preview back image.
+    var previous = GetPreviousIndex(carouselIndex);
+    imagePreviewBack.src = SetElementSource(previous);
+
 }
 
 // Gets the next index within the array.
@@ -53,6 +67,19 @@ function GetNextIndex(index, clampToMaxValue)
     else
     {
         return index + 1;
+    }
+}
+
+// Gets the previous index within the array.
+function GetPreviousIndex(index)
+{
+    if(index <= 0)
+    {
+        return imageUrlArray.length - 1;
+    }
+    else
+    {
+        return index - 1;
     }
 }
 
