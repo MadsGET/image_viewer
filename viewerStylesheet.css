@@ -104,7 +104,7 @@ div.hoverBox
 
 #leftHover:hover
 {
-    background-image: url('icon_ArrowLeft.png');
+    background-image: url('https://madsget.github.io/image_viewer/icon_arrowLeft.png');
 }
 
 #middleHover:hover
@@ -114,7 +114,7 @@ div.hoverBox
 
 #rightHover:hover
 {
-    background-image: url('icon_ArrowRight.png');
+    background-image: url('https://madsget.github.io/image_viewer/icon_arrowRight.png');
 }
 
 div.hoverBox:hover
@@ -138,14 +138,14 @@ div.mainBox:hover
 
 div.leftSelector
 {
-    background-image: url("icon_ArrowLeft.png");
+    background-image: url("'https://madsget.github.io/image_viewer/icon_arrowLeft.png'");
     border-right: 4px solid rgba(73, 73, 73, 0.55);
     float: left;
 }
 
 div.rightSelector
 {
-    background-image: url("icon_ArrowRight.png");  
+    background-image: url("https://madsget.github.io/image_viewer/https://madsget.github.io/image_viewer/icon_arrowRight.png");  
     border-left: 4px solid rgba(73, 73, 73, 0.55);
     float: right;
 }
