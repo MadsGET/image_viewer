@@ -1,0 +1,66 @@
+body
+{
+    margin:0;
+    padding:0;
+    height: 1fr;
+    width: 1fr;
+    background-color: snow;
+}
+
+div.imageViewer
+{
+    height: 50vh;
+    width: 50vw;
+    padding:0;
+    margin: auto;
+    margin-top: 5%;
+    background-color: rgb(168, 156, 156);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 3fr;
+    grid-template-areas: 'title'
+                         'mainImage'
+                         'carousel';
+}
+
+div.title
+{
+    grid-area: title;
+}
+
+div.mainImage
+{
+    grid-area: mainImage;
+}
+
+div.carousel
+{
+    grid-area: carousel;
+    display: grid;
+    grid-template-areas: 'previewBack previewMain previewForward';
+}
+
+div.title, div.mainImage, div.carousel
+{
+    border: 2px solid black;
+}
+
+div.previewBack
+{   
+    grid-area: previewBack;
+}
+
+div.previewMain
+{   
+    grid-area: previewMain;
+}
+
+div.previewForward
+{   
+    grid-area: previewForward;
+}
+
+div.previewBack, div.previewMain, div.previewForward
+{
+    border: 1px solid red;
+}
