@@ -36,6 +36,7 @@ div.title
 div.mainImage
 {
     grid-area: mainImage;
+    position: relative;
     object-fit: contain;
 }
 
@@ -120,6 +121,53 @@ div.hoverBox:hover
 {
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 0px;
+}
+
+div.mainBox
+{
+    opacity: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+div.mainBox:hover
+{
+    opacity: 100%;
+}
+
+div.leftSelector
+{
+    background-image: url("icon_ArrowLeft.png");
+    border-right: 4px solid rgba(73, 73, 73, 0.55);
+    float: left;
+}
+
+div.rightSelector
+{
+    background-image: url("icon_ArrowRight.png");  
+    border-left: 4px solid rgba(73, 73, 73, 0.55);
+    float: right;
+}
+
+div.leftSelector, div.rightSelector
+{
+    opacity: inherit;
+    height: 100%;
+    width: 6.5%;
+    background-color: rgba(105, 105, 105, 0.75);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.leftSelector:hover, div.rightSelector:hover
+{
+    background-color: rgba(105, 105, 105, 0.85);
+}
+
+div.direction:hover
+{
+    background-color: rgba(105, 105, 105, 0.85);
 }
 
 img
