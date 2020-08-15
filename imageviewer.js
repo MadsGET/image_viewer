@@ -39,3 +39,10 @@ function GetNextIndex(index, clampToMaxValue)
     {
         return index + 1;
     }
+}
+
+// Sets the image of a given element.
+function SetElementSource(index)
+{
+    return imageUrlArray[index];
+}
