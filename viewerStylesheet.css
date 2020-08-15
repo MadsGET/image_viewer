@@ -37,7 +37,7 @@ div.carousel
 {
     grid-area: carousel;
     display: grid;
-    grid-template-areas: 'previewBack previewMain previewForward';
+    grid-template-areas: 'previewBack previewMain previewNext';
 }
 
 div.title, div.mainImage, div.carousel
@@ -55,12 +55,12 @@ div.previewMain
     grid-area: previewMain;
 }
 
-div.previewForward
+div.previewNext
 {   
-    grid-area: previewForward;
+    grid-area: previewNext;
 }
 
-div.previewBack, div.previewMain, div.previewForward
+div.previewBack, div.previewMain, div.previewNext
 {
     border: 1px solid red;
 }
