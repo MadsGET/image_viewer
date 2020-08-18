@@ -1,51 +1,49 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<title>Image Viewer</title>
+<header>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="viewerStylesheet.css">
+    <script src="imageviewer.js"></script>
+</header>
 <html lang="en-NO">
-    <header>
-        <meta charset="utf-8" />
-        <title>Image Viewer</title>
-        <link rel="stylesheet" type="text/css" href="viewerStylesheet.css">
-        <script src="imageviewer.js"></script>
-    </header>
-
-    <body onload="OnPageLoaded()">
-        <h1 style="text-align: center;">Image Viewer</h1>
-        <div class="imageViewer">
-
-            <div class="title">
-                <p id="imageTitle">Image Title</p>
-            </div>
-
-            <div class="mainImage">          
-
-                <div class="mainBox">
-                    <div class="leftSelector" onclick="GotoPreviousImage()"></div>
-                    <div class="rightSelector" onclick="GotoNextImage()"></div>
-                </div>  
-
-                <img src="image_1.png" id="imageMain"></img>
-            </div>
-
-            <div class="carousel">
-                <div class="previewBack" style="border-right-style: none;">
-                    <div class="imageBox" onclick="GotoPreviousImage()">
-                        <div class="hoverBox" id="leftHover"><</div>
-                        <img src="image_4.png" id="previewBack"></img>
-                    </div>
-                </div>
-                <div class="previewMain">
-                    <div class="imageBox">
-                        <div class="hoverBox" id="middleHover" onclick="OpenImage()"></div>
-                        <img src="image_1.png" id="previewMain"></img>
-                    </div>
-                </div>
-                <div class="previewNext" style="border-left-style: none;">
-                    <div class="imageBox" onclick="GotoNextImage()">
-                        <div class="hoverBox" id="rightHover">></div>
-                        <img src="image_2.png" id="previewNext"></div></img>
-                    </div>
-                </div>
-            </div>
-
+<body onload="OnPageLoaded();">
+    <h1 style="text-align: center;">Image Viewer</h1>
+    <div class="imageViewer">
+        <div class="title">
+            <p id="imageTitle">Image Title</p>
         </div>
-    </body>
+
+        <div class="mainImage">
+
+            <div class="mainBox">
+                <div class="leftSelector" onclick="GotoPreviousImage()"></div>
+                <div class="rightSelector" onclick="GotoNextImage()"></div>
+            </div>
+
+            <img src="image_1.png" id="imageMain"/>
+        </div>
+
+        <div class="carousel">
+            <div class="previewBack" style="border-right-style: none;">
+                <div class="imageBox" onclick="GotoPreviousImage()">
+                    <div class="hoverBox" id="leftHover"><</div>
+                    <img src="" id="previewBack"/>
+                </div>
+            </div>
+            <div class="previewMain">
+                <div class="imageBox">
+                    <div class="hoverBox" id="middleHover" onclick="OpenImage()"></div>
+                    <img src="" id="previewMain"/>
+                </div>
+            </div>
+            <div class="previewNext" style="border-left-style: none;">
+                <div class="imageBox" onclick="GotoNextImage()">
+                    <div class="hoverBox" id="rightHover">></div>
+                    <img src="" id="previewNext">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>

@@ -1,4 +1,4 @@
-var imageUrlArray = ['image_1.png','image_2.png','image_3.png','image_4.png'];
+var imageUrlArray = [];
 var imageTitles =['Spring in Oakland', 'Summer in China', 'Autumn in Holland', 'Winter in Finland'];
 var carouselIndex = -1;
 
@@ -15,6 +15,17 @@ function OnPageLoaded()
 
     // Run GotoNextImage to automaticly setup images and title.
     GotoNextImage();
+}
+
+// Sets up automaticly 
+function AlbumAutoImport(imageIndex)
+{
+    // 
+    if (imageIndex <= 0 || imageIndex == null)
+    {
+        console.log('AlbumAutoImport: no supplied index.');
+        return;
+    }
 }
 
 // Opens main image in a new tab.
